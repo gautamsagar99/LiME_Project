@@ -1,0 +1,734 @@
+    1  init 0
+    2  exit
+    3  yum install screen
+    4  df -h
+    5  mount /dev/sr0 
+    6  mkdir /dvd
+    7  mount /dev/sr0 /dvd
+    8  ls /
+    9  cd /etc/yum.repos.d/
+   10  ls
+   11  vi dvd.repo
+   12  cat dvd.repo 
+   13  yum repolist
+   14  yum install screen
+   15  yum install epel-release -y
+   16  ifconfig
+   17  df -h
+   18  yum install net-tools
+   19  ifconfig
+   20  yum install epel-release -y
+   21  yum search epel-release
+   22  ping 8.8.8.8
+   23  ifconfig
+   24  cd /tmp
+   25  ls
+   26  criu restore -o criutest.sh --shell-job
+   27  yum install criu
+   28  criu restore -o criutest.sh --shell-job
+   29  ps -aux | grep bash
+   30  criu restore -o restorelog.txt -vvv --shell-job
+   31  ls -l
+   32  rm criutest.sh restorelog.txt 
+   33  yum install screen
+   34  ls -l
+   35  criu restore -o criutest.sh --shell-job
+   36  criutest.sh
+   37  ./criutest.sh
+   38  bash criutest.sh
+   39  rm criutest.sh 
+   40  bash criutest.sh
+   41  ls
+   42  exit
+   43  s
+   44  ls
+   45  init 0
+   46  ifconfig
+   47  systemctl restart NetworkManager
+   48  ifconfig
+   49  systemctl restart NetworkManager
+   50  ifconfig
+   51  systemctl restart NetworkManager
+   52  ifconfig
+   53  init 0
+   54  ifconfig
+   55  exit
+   56  ifconfig
+   57  init 0
+   58  ifconfig
+   59  ping 192.168.0.108
+   60  yum install screen
+   61  yum install epel-release
+   62  init 0
+   63  loginctl 
+   64  exit
+   65  loginctl
+   66  loginctl -h
+   67  loginctl list-users
+   68  loginctl list-status
+   69  loginctl sea-status
+   70  loginctl seat-status
+   71  loginctl show-session
+   72  loginctl -h
+   73  loginctl list-users
+   74  loginctl user-status
+   75  exit
+   76  yum repolits
+   77  yum repolist
+   78  df -h
+   79  ifconfig
+   80  nmcli enp0s3 down
+   81  nmcli up enp0s3 
+   82  nmcli -h
+   83  NetworkManager down
+   84  NetworkManager up
+   85  ifconfig
+   86  exit
+   87  ifconfig
+   88  history
+   89  loginctl list-users
+   90  systemctl -h
+   91  which systemctl 
+   92  cd /usr/bin/systemctl 
+   93  cd /usr/bin/
+   94  ls
+   95  ls systemctl 
+   96  cat systemctl 
+   97  vi systemctl
+   98  cd ..
+   99  s
+  100  ls
+  101  cd ..
+  102  ls
+  103  cd sys/
+  104  ls
+  105  ls dev/
+  106  ls fs/
+  107  ls fs/cgroup/
+  108  cd fs/cgroup/
+  109  ls
+  110  ls devices/
+  111  ls devices/user.slice/
+  112  cat devices/user.slice/devices.allow 
+  113  cd devices/user.slice/
+  114  vi devices.allow 
+  115  ls
+  116  ls -l
+  117  cd ..
+  118  ls
+  119  cat devices.list 
+  120  cd ..
+  121  ls
+  122  cd pids/
+  123  ls
+  124  cd ..
+  125  ls
+  126  cd systemd/
+  127  ls
+  128  cd ..
+  129  cd rdma/
+  130  ls
+  131  cat cgroup.procs 
+  132  ls
+  133  exit
+  134  systemctl -h
+  135  env
+  136  kernel -h
+  137  rpm -q kernel
+  138  whatprovides kernel
+  139  yum whatprovides kernel
+  140  which kernel
+  141  systemctl poweroff
+  142  loginctl 
+  143  systemctl cat session-3.scope
+  144  systemctl status session-3.scope
+  145  exit
+  146  loginctl 
+  147  loginctl --help
+  148  loginctl list-users
+  149  loginctl list-sessions
+  150  systemctl cat session-3.scope
+  151  systemctl status session-3.scope
+  152  ps a
+  153  systemctl status session-3.scope
+  154  sleep &
+  155  sleep 100 &
+  156  systemctl status session-3.scope
+  157  fg 1491
+  158  fg 1
+  159  ps a
+  160  kill -9 1486
+  161  ps a
+  162  systemctl status sessions
+  163  systemctl status session-3.scope
+  164  loginctl 
+  165  systemctl status session-4.scope
+  166  systemctl edit session-3.scope
+  167  systemctl status session-3.scope
+  168  loginctl user-status root
+  169  systemctl status session-3.scope
+  170  systemctl cat session-3.scope
+  171  systemctl edit session-3.scope
+  172  systemctl cat session-3.scope
+  173  systemctl status session-3.scope
+  174  sleep 100 &
+  175  systemctl status session-3.scope
+  176  loginctl 
+  177  exit
+  178  ifconfig
+  179  sleep 100 &
+  180  loginctl
+  181  exit
+  182  systemctl poweroff
+  183  rpm -q nc
+  184  yum install nc -y
+  185  df -h
+  186  cd /
+  187  ls
+  188  cd dvd/
+  189  ls
+  190  cd ..
+  191  cd /etc/
+  192  ls
+  193  cd yum.repos.d/
+  194  ls
+  195  cat dvd.repo 
+  196  ifconfig
+  197  cat dvd.repo 
+  198  df -h
+  199  cat dvd.repo 
+  200  yum repolist
+  201  yum install nc -y
+  202  yum whatprovides nc
+  203  yum install nc 
+  204  cd /
+  205  cd d
+  206  cd dvd/
+  207  ls
+  208  init 0
+  209  cd /dvd/
+  210  ls
+  211  yum install nc
+  212  df -h
+  213  cd /etc/yum.repos.d/
+  214  ls
+  215  cat dvd.repo 
+  216  df -h
+  217  init 0
+  218  nc 192.168.0.109 1234
+  219  exit
+  220  df -h
+  221  mount /dev/sr0 /dvd
+  222  df -h
+  223  cd /dvd/
+  224  ls
+  225  yum install nc
+  226  nc --help
+  227  nc -l 1234
+  228  ifconfig
+  229  nc -l 1234
+  230  nc -l 1234 --keep-open
+  231  nc -l 1234 --keep-open --allow 192.168.0.110
+  232  selinux 0
+  233  setenforce 0
+  234  getenforce 0
+  235  nc -l 1234 --keep-open --allow 192.168.0.110
+  236  nc -l 1234 --keep-open 
+  237  nc -vv -l 1234 --keep-open 
+  238  init 0
+  239  ifconfig
+  240  nc -h
+  241  nc -l 1234
+  242  strace -h
+  243  yum install strace -y
+  244  strace -h
+  245  df -h
+  246  cd /etc/
+  247  ls
+  248  ls | grep .bashrc
+  249  ls | grep bash
+  250  ls | grep bashrc
+  251  cat bashrc
+  252  vi bashrc
+  253  ls
+  254  ls | grep  rc
+  255  cd rc.local 
+  256  ls
+  257  cd rc.local 
+  258  cat rc.local 
+  259  vi rc.local 
+  260  df -h
+  261  init 0
+  262  df -h
+  263  cd /
+  264  ls
+  265  cd dev/
+  266  ls
+  267  cd sr0 
+  268  cd ..
+  269  cd dvd/
+  270  ls
+  271  mount /dev/sr0 /dvd
+  272  df -h
+  273  cd ..
+  274  cd etc/
+  275  ls
+  276  cd rc.local 
+  277  cat rc.loa
+  278  cat rc.local 
+  279  chmod +x rc.local 
+  280  ls -l | grep rc.local
+  281  init 0
+  282  ifconfig
+  283  nc 192.168.109 1234
+  284  exit
+  285  df -h
+  286  yum install strace 
+  287  ifconfig
+  288  cd /
+  289  ls
+  290  cd sys/
+  291  ls
+  292  cd fs/
+  293  ls
+  294  cd cgroup/
+  295  ls
+  296  cd pids/
+  297  ls
+  298  cd system.slice/
+  299  ls
+  300  cd system.slice/ | less
+  301  cd system.slice/ | top
+  302  cd system.slice/ | top -5
+  303  kjafjkdcjlfdnj
+  304  rpm -q nc
+  305  nc -h
+  306  nc -l 1234 
+  307  ifconfig
+  308  setenforce 0
+  309  nc -l 1234 
+  310  ifconfig
+  311  nc -l 1234 
+  312  nc -l 1234 --keep-open --allow 192.168.0.109
+  313  nc  -vv -l 1234 --keep-open --allow 192.168.0.109
+  314  cd ..
+  315  cd ~
+  316  cd /
+  317  cd .
+  318  nc  -vv -l 1234 --keep-open --allow 192.168.0.109
+  319  nc  -vv -l 1234 --keep-open --allow 192.168.0.106
+  320  setenforce 0
+  321  nc  -vv -l 1234 --keep-open --allow 192.168.0.106
+  322  nc  -vv -l 1234 --keep-open 
+  323  init 0
+  324  podman
+  325  init 0
+  326  ifconfig
+  327  init 0
+  328  cd /
+  329  cd !
+  330  cd ~
+  331  ls
+  332  cd *
+  333  cd ^
+  334  cd @
+  335  cd &
+  336  ps -a
+  337  fg 14698
+  338  fg 1
+  339  ps -a
+  340  ls
+  341  cd /
+  342  ls
+  343  exit
+  344  ifconfig
+  345  yum repolist
+  346  df -h
+  347  cd /
+  348  ls
+  349  cd /dvd/
+  350  ls
+  351  df -h
+  352  mouunt -h
+  353  mouunt --help
+  354  umouunt --help
+  355  mount --help
+  356  df -h
+  357  cd /etc/
+  358  ls
+  359  cd /yum.repos.d
+  360  cd yum.repos.d
+  361  ls
+  362  cat dvd.repo 
+  363  cd /
+  364  ls
+  365  cd dev/
+  366  ls
+  367  cd sr0
+  368  mount /dev/sr0 /dvd
+  369  df -h
+  370  yum repolist
+  371  cd /dvd
+  372  ls
+  373  yum --help
+  374  yum --help  | less
+  375  yum info httpd
+  376  yum --help  | less
+  377  yum remove httpd
+  378  yum info httpd
+  379  yum remove httpd
+  380  cd ..
+  381  cd /var/www/html/
+  382  ls
+  383  rm index.html 
+  384  ls
+  385  ifconfig
+  386  docker images
+  387  cd /root/.ssh/id_rsa.pub
+  388  cat /root/.ssh/id_rsa.pub
+  389  cd /root/.ssh/
+  390  ls
+  391  cat authorized_keys 
+  392  cd /
+  393  ls
+  394  init 0
+  395  vim /etc/sudoers
+  396  vi /etc/sudoers
+  397  init 0
+  398  ls
+  399  ifconfig
+  400  useradd ansible
+  401  passwd ansible
+  402  su - ansible
+  403  ls
+  404  systemctl status httpd
+  405  ifconfig
+  406  yum remove httpd
+  407  init 0
+  408  ifconfig
+  409  ping 192.168.0.108
+  410  ping 192.168.0.109
+  411  rpm -q docker 
+  412  what provides docker
+  413  yum whatprovides docker-ce
+  414  yum whatprovides docker
+  415  init 0
+  416  dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+  417  dnf upgrade
+  418  rpm -q kubectl
+  419  yum install kubectl
+  420  subscription-manager repos --enable "rhel-*-optional-rpms"  --enable "rhel-*-extras-rpms"
+  421  yum install snapd
+  422  yum install snapd --skip-broken
+  423  systemctl enable --now snap.socket
+  424  systemctl enable --now snapd.socket
+  425  systemctl enable --now snapd
+  426  rpm -q snap
+  427  rpm -q snapd
+  428  yum install snapd --skip-broken
+  429  yum install snapd --nobest
+  430  yum install snapd --skip-broken
+  431  snap install kubectl --classic
+  432  yum update
+  433  yum install epel-release
+  434  yum install snapd
+  435  yum install snapd --skip-broken
+  436  systemctl enable --now snapd.socket
+  437  systemctl enable --now snapd
+  438  systemctl status snapd
+  439  yum install epel-release
+  440  yum repolist
+  441  dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+  442  rpm -qa | grep epel
+  443  epel ---version
+  444  yum upgrade epel-release
+  445  yum update epel-release
+  446  yum remove epel-release
+  447  dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+  448  yum install snapd
+  449  df -h
+  450  yum repolist
+  451  curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
+  452  curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
+  453  curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  454  curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+  455  echo "$(cat kubectl.sha256) kubectl" | sha256sum --check
+  456  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+  457  kubectl version --client
+  458  kubectl version --client --output=yaml
+  459  kubectl cluster-info
+  460  minikube 
+  461  kubectl get pods
+  462  kubectl -h
+  463  kubectl -h --less
+  464  kubectl -h less
+  465  kubectl -h | less
+  466  kubectl config
+  467  kubectl config set-cluster
+  468  kubectl config
+  469  kubectl cluster-info
+  470  kubectl cluster-info dummp
+  471  ls
+  472  init 0
+  473  ls
+  474  cd /
+  475  ls
+  476  cd /etc/
+  477  ls
+  478  cd ..
+  479  cd var/www/
+  480  ls
+  481  cd 
+  482  yum install python3
+  483  cd var/www/
+  484  cd /var/www/
+  485  ls
+  486  yum install httpd
+  487  ls
+  488  cd cgi-bin/
+  489  ls
+  490  vi first.py
+  491  ls
+  492  ls -l
+  493  chmod +x first.py 
+  494  ls -l
+  495  systemctl enable httpd --now
+  496  netstat -tnlp
+  497  ifconfig
+  498  setenforce 0
+  499  getenforce
+  500  setenforce 0
+  501  getenforce
+  502  systemctl stop firewalld
+  503  cat first.py 
+  504  ls /usr/bin/ | grep pytjon
+  505  ls /usr/bin/ | grep python
+  506  ./first.py 
+  507  vi first.py 
+  508  init 0
+  509  ls
+  510  kubectl ls
+  511  kubectl get pods
+  512  ifconfig
+  513  systemctl status httpd
+  514  systemctl status firewaalld
+  515  systemctl status firewaall
+  516  systemctl status firewalld
+  517  cd /usr/sbin/
+  518  vim firewalld 
+  519  vi firewalld 
+  520  systemctl status firewalld
+  521  cd ..
+  522  cd lib/
+  523  ls
+  524  cd firewalld/
+  525  ls
+  526  cd ipsets/
+  527  ls
+  528  cd ..
+  529  cd zones/
+  530  ls
+  531  vi trusted.xml 
+  532  ls
+  533  firwalld.zones()
+  534  firewalld.zones()
+  535  firewalld-cmd --get-zones
+  536  ntables
+  537  netstat 
+  538  netstat  -tnlp
+  539  cd ..
+  540  ls
+  541  cd services/
+  542  ls
+  543  cd ../..
+  544  ls
+  545  cd NetworkManager/
+  546  ls
+  547  cat conf.d/
+  548  cd conf.d/
+  549  ls
+  550  cd ..
+  551  ls
+  552  cd dispatcher.d/
+  553  ls
+  554  cd ..
+  555  ls
+  556  cd system-connections/
+  557  ls
+  558  cd ../..
+  559  ls
+  560  cd systemd/
+  561  ls
+  562  cd ..
+  563  ls
+  564  cd 
+  565  cd /
+  566  ls
+  567  cd etc/
+  568  ls
+  569  iptables 
+  570  iptables -h
+  571  iptables -h | less
+  572  iptables -t
+  573  iptables -L
+  574  ls firewalld/services/
+  575  ls
+  576  ls firewalld/services/
+  577  ls firewalld/
+  578  firewall-cmd
+  579  firewall-cmd -h
+  580  firewall-cmd --list-all
+  581  whatprovides firewall-cmd
+  582  yum whatprovides firewall-cmd
+  583  cd 
+  584  systemctl status firewalld
+  585  systemctl stop firewalld
+  586  cd /var/www/cgi-bin/
+  587  ls
+  588  cd ../html/
+  589  ls
+  590  vi index.html 
+  591  cat index.html 
+  592  cd ../cgi-bin/
+  593  vi first.py 
+  594  cat first.py 
+  595  vi first.py 
+  596  cat first.py 
+  597  systemctl stop firewalld
+  598  systemctl start httpd
+  599  setenforce 0
+  600  ls -la
+  601  python3 first.py 
+  602  vi first.py 
+  603  cd ../
+  604  cd html/
+  605  vi index.html 
+  606  cd ../cgi-bin/
+  607  ls
+  608  cat first.py 
+  609  cat ../html/first.py
+  610  cat first.py 
+  611  cat ../html/index.html 
+  612  vi first.py 
+  613  init 0
+  614  getenforce
+  615  systemctl status firewalld
+  616  init 0
+  617  rpm -q python3
+  618  fdisk -l
+  619  df -h
+  620  yum install python3 -y
+  621  rpm -q python3
+  622  rpm -q python
+  623  python3
+  624  yum install httpd
+  625  cd /var/www/
+  626  ls
+  627  cd cgi-bin/
+  628  ls
+  629  init 0
+  630  df -h
+  631  yum install kernel-devel kernel-headers
+  632  yum install git -y
+  633  git clone https://github.com/vimallinuxworld13/LiME
+  634  ls
+  635  cd LiME/
+  636  ls
+  637  cd src/
+  638  pwd
+  639  ls
+  640  yum install make
+  641  make
+  642  yum install gcc
+  643  make
+  644  yum install elfutils-libelf-devel -y
+  645  ls
+  646  cat Makefile
+  647  cat Makefile | less
+  648  make
+  649  ls
+  650  modinfo lime-4.18.0-305.el8.x86_64.ko 
+  651  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/myram.data format=raw
+  652  cat /myram.data | strings 
+  653  cd /
+  654  vim pythonfileForLiME.py
+  655  vi pythonfileForLiME.py
+  656  python3 pythonfileForLiME.py 
+  657  vi pythonfileForLiME.py
+  658  python3 pythonfileForLiME.py 
+  659  vi pythonfileForLiME.py
+  660  python3 pythonfileForLiME.py  & 
+  661  vi pythonfileForLiME.py
+  662  python3 pythonfileForLiME.py  & 
+  663  cd root/LiME/src/
+  664  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/myram.data format=raw
+  665  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/mypy.data format=raw
+  666  make
+  667  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/mypy.data format=raw
+  668  ls
+  669  rm lime-4.18.0-305.el8.x86_64.ko 
+  670  make
+  671  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/mypy.data format=raw
+  672  modinfo lime-4.18.0-305.el8.x86_64.ko 
+  673  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/mypy1.data format=raw
+  674  cd .. 
+  675  cd ..
+  676  rm -r LiME/
+  677  rm -rv *  LiME/
+  678  ls
+  679  rm -rv   LiME/
+  680  ls
+  681  cd LiME/
+  682  ls
+  683  cd src/
+  684  LS
+  685  ls
+  686  rm -r 
+  687  rm -r .
+  688  cd ..
+  689  rm -r src/
+  690  sudo rm -r src/
+  691  ls
+  692  cd ..
+  693  sudo rm -r LiME/
+  694  git clone https://github.com/vimallinuxworld13/LiME
+  695  cd LiME/src/
+  696  s
+  697  ls
+  698  make
+  699  ps -aux
+  700  ls
+  701  cd 
+  702  cd /root/LiME/
+  703  cd ..
+  704  sudo rm -rr LiME/
+  705  ls
+  706  git clone https://github.com/vimallinuxworld13/LiME
+  707  ls
+  708  cd LiME/
+  709  cd src/
+  710  ls
+  711  ls /root/
+  712  cd 
+  713  ls
+  714  ls /
+  715  cd /root/LiME/src/
+  716  python3 /pythonfileForLiME.py &
+  717  make
+  718  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/mypy.data format=raw
+  719* 
+  720  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/mypy.data format=raw
+  721  ls /
+  722  cat /myram.data | strings | grep "gautam"
+  723  vim /pythonfileForLiME.py
+  724  vi /pythonfileForLiME.py
+  725  python3 /pythonfileForLiME.py &
+  726  make
+  727  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/mypy.data format=raw
+  728  cat /myram.data | strings | grep "sagar123"
+  729  rmod lime
+  730  rmmod lime
+  731  python3 /pythonfileForLiME.py &
+  732  insmod /root/LiME/src/lime-4.18.0-305.el8.x86_64.ko path=/mypy.data format=raw
+  733  cat /mypy.data | strings | grep "sagar123"
+  734  history > history.txt
